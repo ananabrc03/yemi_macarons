@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /panier
+Disallow: /commande
+Disallow: /api/
+
+Sitemap: https://www.yemimacarons.fr/sitemap.xml
