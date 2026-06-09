@@ -1,0 +1,10 @@
+# Dépendances
+node_modules/
+
+# Secrets — ne jamais commiter
+.env
+
+# Journaux et fichiers système
+*.log
+.DS_Store
+Thumbs.db
