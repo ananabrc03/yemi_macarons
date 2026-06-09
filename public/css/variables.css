@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Yémi Macarons — Design tokens (palette, typographies, espacements)
+   Palette relevée sur les visuels fournis (cf. brief, section 3).
+   ========================================================================== */
+
+:root {
+  /* --- Couleurs de marque --- */
+  --bleu-clair:   #A4BAD7; /* fond du logo, aplats doux                */
+  --bleu:         #6E86A8; /* bleu poudré signature : titres, liens    */
+  --bleu-nuit:    #2B3A55; /* texte fort, header/footer, boutons       */
+  --kraft:        #B98E63; /* rappels coffret, séparateurs chauds      */
+  --dorure:       #B98A3C; /* accents premium, badge « populaire »     */
+  --ivoire:       #F7F2E9; /* fonds de page, cartes                    */
+  --bleu-doux:    #EAF0F7; /* sections alternées, blocs d'info         */
+  --encre:        #2A2A2A; /* corps de texte                           */
+  --blanc:        #FFFFFF;
+
+  /* --- États / feedback --- */
+  --erreur:       #B3503E;
+  --succes:       #4E7A5A;
+
+  /* --- Typographies --- */
+  --font-display: "Cormorant Garamond", Georgia, serif; /* titres        */
+  --font-accent:  "Tangerine", cursive;                 /* sur-titres    */
+  --font-corps:   "Jost", "Segoe UI", sans-serif;       /* corps, UI     */
+
+  /* --- Échelle typographique (mobile-first) --- */
+  --fs-hero:    clamp(2.1rem, 8vw, 4rem);
+  --fs-h1:      clamp(1.9rem, 6vw, 3rem);
+  --fs-h2:      clamp(1.6rem, 5vw, 2.4rem);
+  --fs-h3:      1.25rem;
+  --fs-accent:  clamp(2rem, 6vw, 3.2rem);
+  --fs-corps:   1rem;
+  --fs-petit:   0.875rem;
+
+  /* --- Espacements --- */
+  --esp-1: 0.5rem;
+  --esp-2: 1rem;
+  --esp-3: 1.5rem;
+  --esp-4: 2.5rem;
+  --esp-5: 4rem;
+
+  /* --- Divers --- */
+  --rayon:        10px;                              /* coins arrondis 8-12px */
+  --ombre-douce:  0 6px 24px rgba(43, 58, 85, 0.08); /* ombres très douces    */
+  --ombre-survol: 0 10px 32px rgba(43, 58, 85, 0.14);
+  --transition:   200ms ease;
+  --largeur-max:  1140px;
+  --hauteur-header: 64px;
+}
