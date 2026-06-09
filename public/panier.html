@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon panier · Yémi Macarons</title>
+  <meta name="description" content="Votre panier Yémi Macarons : vérifiez vos coffrets de macarons artisanaux avant de passer commande. Aucun paiement en ligne, nous vous recontactons.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://www.yemimacarons.fr/panier">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="evitement" href="#contenu">Aller au contenu principal</a>
+
+  <header class="header">
+    <div class="conteneur header__barre">
+      <a class="header__logo" href="/" aria-label="Yémi Macarons — retour à l'accueil">
+        <img src="/assets/img/logo-contracte.png" alt="Logo Yémi Macarons" width="44" height="44">
+      </a>
+      <nav class="header__nav" id="navigation" aria-label="Navigation principale">
+        <ul class="header__liens">
+          <li><a class="header__lien" href="/">Accueil</a></li>
+          <li><a class="header__lien" href="/saveurs">Saveurs</a></li>
+          <li><a class="header__lien" href="/coffrets">Coffrets</a></li>
+          <li><a class="header__lien" href="/histoire">Histoire</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a class="panier-lien" href="/panier" aria-label="Voir mon panier" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 8h12l1.2 13H4.8L6 8Z"></path>
+            <path d="M9 10V6a3 3 0 0 1 6 0v4"></path>
+          </svg>
+          <span class="panier-lien__compteur panier-lien__compteur--vide" aria-label="articles dans le panier">0</span>
+        </a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="navigation" aria-label="Ouvrir ou fermer le menu">
+          <span class="burger__trait"></span>
+          <span class="burger__trait"></span>
+          <span class="burger__trait"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="section" aria-label="Contenu du panier">
+      <div class="conteneur">
+        <header class="titre-duo">
+          <span class="titre-duo__accent" aria-hidden="true">encore un instant</span>
+          <h1 class="titre-duo__principal">Mon panier</h1>
+        </header>
+
+        <!-- Liste des coffrets (rendue par panier.js) -->
+        <div id="panier-contenu"></div>
+
+        <!-- Sous-total + bouton Commander (rendus par panier.js) -->
+        <div id="panier-resume"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="conteneur">
+      <div class="footer__grille">
+        <div>
+          <img class="footer__logo" src="/assets/img/logo-normal.png"
+               alt="Yémi Macarons" width="96" height="96" loading="lazy">
+          <p class="footer__tagline">Le goût d'un continent dans un nuage</p>
+        </div>
+        <nav aria-label="Navigation de bas de page">
+          <p class="footer__titre">Navigation</p>
+          <ul class="footer__liste">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/saveurs">Saveurs</a></li>
+            <li><a href="/coffrets">Coffrets</a></li>
+            <li><a href="/histoire">Notre histoire</a></li>
+            <li><a href="/panier">Mon panier</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer__titre">Contact</p>
+          <ul class="footer__liste">
+            <li>Paris, France</li>
+            <li><a href="tel:+33769031319">07 69 03 13 19</a></li>
+            <li><a href="mailto:yemi_macarons@yahoo.com">yemi_macarons@yahoo.com</a></li>
+            <li><a href="https://www.instagram.com/yemi_macarons" target="_blank" rel="noopener">Instagram @yemi_macarons</a></li>
+          </ul>
+          <p class="footer__mentions">
+            Bar à macarons pour vos événements :
+            <a href="mailto:yemi_macarons@yahoo.com?subject=Demande%20Bar%20%C3%A0%20macarons">contactez-nous</a>.
+          </p>
+        </div>
+        <div>
+          <p class="footer__titre">Bon à savoir</p>
+          <p class="footer__mentions">
+            <strong>Allergènes :</strong> nos produits contiennent des œufs, des fruits
+            à coque (amandes) et du lait (parfums cacao-piments et goyave-coco).
+            Ils peuvent contenir des traces de gluten et d'autres fruits à coque.
+          </p>
+          <p class="footer__mentions">
+            <strong>Conservation :</strong> entre 0 °C et +4 °C. Sortir 10 à 15 minutes
+            avant dégustation. À consommer dans les 3 jours après achat.
+          </p>
+        </div>
+      </div>
+      <p class="footer__bas">© 2026 Yémi Macarons · Paris — Macarons artisanaux aux saveurs africaines et caribéennes</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/panier.js"></script>
+</body>
+</html>
