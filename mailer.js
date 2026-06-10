@@ -109,7 +109,7 @@ function construireRecapitulatif(commande) {
 async function envoyerCommande(commande) {
   const transporteur = creerTransporteur();
   const recapitulatif = construireRecapitulatif(commande);
-  const destinataire = process.env.ORDER_EMAIL || 'yemi_macarons@yahoo.com';
+  const destinataire = process.env.ORDER_EMAIL || 'anaisbrochec@yahoo.fr';
   const expediteur = process.env.SMTP_FROM || process.env.SMTP_USER;
 
   // Mode développement : pas de SMTP configuré, on journalise simplement.
